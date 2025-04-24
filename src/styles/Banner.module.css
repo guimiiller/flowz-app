@@ -1,0 +1,152 @@
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #EFF0F5 0%, #DADBE0 46%);
+}
+
+.bannerContainer h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.bannerContainer .logoBanner{
+    margin-bottom: 60px;
+}
+
+.bannerContainer a{
+    padding: 10px 45px;
+    background: transparent;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+}
+
+.bannerContainer a:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+.bannerContainer .bannerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bannerContainer .bannerContent div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyBanner{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.copyBanner p{
+    font-size: 12px;
+}
+
+.crowLogo{
+    position: absolute;
+    bottom: 5px;
+}
+
+.crowLogo img{
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.typewriter {
+    min-height: 48px; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.visible ~ .typewriter {
+    border-right: none;
+}
+
+.logoWrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 160px; 
+}
+  
+.logoWrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.noCursor {
+    border-right: none !important;
+    animation: none !important;
+}
+
+@media (max-width: 426px){
+    .bannerContainer h2{
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .bannerContainer .logoBanner{
+        width: 300px;
+    }    
+}
+
+@media (max-width: 376px){
+    .bannerContainer h2{
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 20px;
+    }
+
+    .bannerContainer .logoBanner{
+        width: 280px;
+    }    
+}

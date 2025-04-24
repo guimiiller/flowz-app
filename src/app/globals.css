@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+html{
+  background: linear-gradient(to bottom, #EFF0F5 0%, #DADBE0 46%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Barra de Rolagem */
+
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+  background-color: #DADBE0;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #000;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+/* Linha que desce*/
+
+
+/* Barra de Rolagem */

@@ -1,0 +1,89 @@
+.benefitsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0 120px 0;
+}
+  
+.benefitsContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1180px;
+  gap: 90px;
+}
+  
+.benefitsContent h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 9px 0;
+}
+  
+.benefits1,
+.benefits2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+  width: 100%;
+}
+  
+.benefits1 div,
+.benefits2 div {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+}
+  
+.benefits1 div p,
+.benefits2 div p {
+  line-height: 22px;
+  font-size: 15px;
+  max-width: 230px;
+}
+  
+
+@media (max-width: 1025px) {
+  .benefitsContent {
+    max-width: 900px;
+  }
+  
+  .benefits1,
+  .benefits2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+  
+
+@media (max-width: 769px) {
+  .benefitsContent {
+    max-width: 100%;
+    gap: 70px;
+  }
+  
+  .benefits1,
+  .benefits2 {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+}
+  
+@media (max-width: 426px) {
+  .benefitsContainer {
+    padding: 50px 0;
+  }
+  
+  .benefitsContent h3 {
+    font-size: 23px;
+  }
+  
+  .benefitsContent img {
+    width: 45px;
+    height: 45px;
+  }
+}
+  

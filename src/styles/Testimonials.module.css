@@ -1,0 +1,154 @@
+.testimonialsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    background: #DADBE0;
+}
+  
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+}
+  
+.card {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 30px;
+    width: 342px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    opacity: 0.4;
+    transform: scale(0.85);
+    transition: all 0.3s ease;
+}
+  
+.card .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+  
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+  
+.socials {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.socials a{
+    transition: transform .3s;
+}
+
+.socials a:hover{
+    transform: scale(1.1);
+}
+  
+.active {
+    transform: scale(1.1);
+    opacity: 1;
+    border: 1px solid #000;
+}
+  
+.side {
+    opacity: 0.7;
+    transform: scale(1);
+}
+  
+.controls {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+  
+.controls button {
+    font-size: 24px;
+    padding: 5px 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+  
+
+@media (max-width: 769px) {
+    .slider {
+        flex-direction: row;
+    }
+
+    .card{
+        width: 330px;
+        height: 280px;
+    }
+
+    .card .circle {
+        width: 40px;
+        height: 40px;
+    }
+      
+    .card p {
+        font-size: 12px;
+    }
+}
+  
+@media (max-width: 426px) {
+    .slider {
+      overflow: hidden;
+      position: relative;
+      flex-wrap: nowrap;
+      gap: 0;
+      width: 342px;
+      height: 322px;
+    }
+  
+    .card {
+      flex: 0 0 100%;
+      max-width: 100%;
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 0.5s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    .card.active {
+      transform: translateX(0%);
+      opacity: 1;
+      position: relative;
+    }
+  
+    .card .circle {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .card p {
+      font-size: 13px;
+    }
+  
+    .socials a {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .controls {
+      gap: 10px;
+    }
+}

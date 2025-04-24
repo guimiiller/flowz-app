@@ -1,0 +1,21 @@
+.buttonFree{
+    padding: 10px 45px;
+    background: transparent;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+}
+
+.buttonFree:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+.withMargin{
+    margin-top: 30px;
+}
