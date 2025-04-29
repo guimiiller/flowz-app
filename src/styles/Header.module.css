@@ -40,7 +40,9 @@
     transition: all .3s;
     cursor: pointer;
     outline: none;
+    color: #000;
 }
+
 
 .navButtons button:hover{
     background-color: #000;

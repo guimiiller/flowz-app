@@ -1,0 +1,105 @@
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #EFF0F5 0%, #DADBE0 46%);
+}
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 269px;
+}
+
+.formContainer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.formContainer form input{
+    width: 269px;
+    padding: 8px 5px;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background: transparent;
+    outline: none;
+}
+
+
+.buttonLogin{
+    padding: 8px 45px;
+    background: transparent;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+}
+
+.buttonLogin:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+.copy{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+.copy p{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+.crowLogo{
+    position: absolute;
+    bottom: 5px;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+}
+  
+.inputGroup input {
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+  
+.inputGroup label {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    background: #DADBE0;
+    padding: 0 4px;
+    color: #000;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
+  
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 13px;
+}

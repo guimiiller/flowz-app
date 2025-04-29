@@ -25,8 +25,8 @@ export function Header(){
                 </div>
 
                 <div className={styles.navButtons}>
-                    <button>Criar Conta</button>
-                    <button>Entrar</button>
+                    <Link href={'/login'}><button>Criar Conta</button></Link>
+                    <Link href={'/login'}><button>Entrar</button></Link>
                 </div>
 
 
