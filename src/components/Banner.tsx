@@ -6,31 +6,28 @@ import { Button } from "./Button";
 import { useEffect, useState } from "react";
 
 export function Banner() {
-  const [text, setText] = useState("");
+  const [showText, setShowText] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
-    const fullText = "Automatize seus atendimentos com";
-    let index = 0;
+    // Primeiro mostra o texto
+    const textTimeout = setTimeout(() => setShowText(true), 200);
+    // Depois mostra o logo e botão
+    const logoTimeout = setTimeout(() => setShowLogo(true), 1400);
 
-    const typeWriter = () => {
-      if (index < fullText.length) {
-        setText((prev) => prev + fullText.charAt(index));
-        index++;
-        setTimeout(typeWriter, 70);
-      } else {
-        setShowLogo(true);
-      }
+    return () => {
+      clearTimeout(textTimeout);
+      clearTimeout(logoTimeout);
     };
-
-    typeWriter();
   }, []);
 
   return (
     <main className={styles.bannerContainer}>
       <div className={styles.bannerContent}>
         <div>
-        <h2 className={`${styles.typewriter} ${showLogo ? styles.noCursor : ""}`}>{text}</h2>
+          <h2 className={`${styles.fadeInText} ${showText ? styles.visible : ""}`}>
+            Automatize seus atendimentos com
+          </h2>
 
           <div className={`${styles.logoWrapper} ${showLogo ? styles.visible : ""}`}>
             <Image
