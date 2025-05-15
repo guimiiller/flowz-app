@@ -8,18 +8,25 @@ export default function LastMessages(){
             <HeaderLogo />
             <section className={styles.container}>
                 <div className={styles.lastContactContainer}>
+                    <div className={styles.lastContactIcons}>
+                        <div><Image src={'./search.svg'} alt="Search Icon" width={25} height={25}/></div>
+                        <div><Image src={'./filter.svg'} alt="Filter Icon" width={25} height={25}/></div>
+                    </div>
                     <div className={styles.contactsContainer}>
-                        <div><h3>Contacts</h3></div>
-                        <div className={styles.lastContactsContainer}>
-                            <div className={styles.contactProfile}>
-                                <div className={styles.lastContact}></div>
-                                <div><div><h4>Name</h4></div><div><p>(11) 99999-9999</p></div></div>
+                        <div className={styles.contactsContent}>
+                            <div><h3>Contacts</h3></div>
+                            <div className={styles.lastContactsContainer}>
+                                <div className={styles.contactProfile}>
+                                    <div className={styles.lastContact}></div>
+                                    <div><div><h4>Name</h4></div><div><p>(11) 99999-9999</p></div></div>
+                                </div>
+                                <div className={styles.contactDate}>
+                                    <p>21 may, 09:29 am</p>
+                                </div>
                             </div>
-                            <div className={styles.contactDate}>
-                                <p>21 may, 09:29 am</p>
-                            </div>
+                            <div className={styles.line}></div>
                         </div>
-                        <div className={styles.line}></div>
+                        <div><button>More Contacts <Image src={'./morebuttonicon.svg'} alt="More Icon" width={20} height={20}/> </button></div>
                     </div>
                     <div className={styles.lastMessagesContainer}>
                         <div><h3>Last Messages</h3></div>
