@@ -1,0 +1,130 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: transparent;
+    padding: 20px 30px;
+}
+
+.outButton{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.outButton:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: linear-gradient(to bottom, #EFF0F5 0%, #DADBE0 46%);
+}
+
+.dashboardContent{
+    margin-left: 90px;
+}
+
+.dashboardNav{
+    border: 2px solid #bababa;
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 20px 0;
+}
+
+.dashboardNav .dashboardNavLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dashboardNav img{
+    width: 32px;
+    height: 32px;
+    transition: transform .3s;
+    margin: 10px 0;
+}
+
+.dashboardNav img:hover{
+    transform: scale(1.1);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: absolute;
+  left: 120%; /* aparece à direita do ícone */
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media(max-width: 426px){
+    .container{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .dashboardContent{
+        margin: 0;
+    }
+
+
+    .dashboardNav{
+        position: absolute;
+        bottom: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        max-width: 320px;
+    }
+
+    .dashboardNav .dashboardNavLinks{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .dashboardNav .dashboardNavLinks div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

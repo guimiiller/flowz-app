@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Saira", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* Barra de Rolagem */
+
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+  background-color: #DADBE0;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: #DADBE0;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 5px;
+}
+/* Linha que desce*/
+
+
+/* Barra de Rolagem */
